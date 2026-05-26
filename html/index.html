@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hu Jiashuai - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        .student-id {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .info-section {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #555;
+        }
+        .info-value {
+            color: #333;
+        }
+        .deploy-badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: #28a745;
+            color: white;
+            border-radius: 25px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="profile.jpg" alt="Hu Jiashuai" class="profile-img">
+        <h1>Hu Jiashuai</h1>
+        <p class="student-id">Student ID: 20242223</p>
+        <p>Software Engineering Student</p>
+        <p>College of Arts, Media and Technology, Chiang Mai University</p>
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">Name</span>
+                <span class="info-value">Hu Jiashuai</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Student ID</span>
+                <span class="info-value">20242223</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Program</span>
+                <span class="info-value">Software Engineering</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Course</span>
+                <span class="info-value">Basic Development and Operation</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Lab</span>
+                <span class="info-value">Lab 07 - Automated Deployment</span>
+            </div>
+        </div>
+
+        <div class="deploy-badge">Deployed via GitHub Actions</div>
+    </div>
+</body>
+</html>
